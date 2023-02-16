@@ -9,7 +9,7 @@ macro_rules! num_slots {
 
 #[allow(dead_code)]
 #[allow(unused_braces)]
-struct Inner<const C: usize>
+struct S<const C: usize>
 where
     [(); { num_slots!(C) }]:, {
     /* An asterisk-based, or a double-slash-prefixed, comment here is
